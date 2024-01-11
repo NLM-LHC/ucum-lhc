@@ -1819,7 +1819,7 @@ var UcumLhcUtils = /*#__PURE__*/function () {
      *    'invalid':  fromUnit is not a valid UCUM code;
      *    'failed':  the conversion could not be made (e.g., if it is an "arbitrary" unit);
      *    'error':  if an error occurred (an input or programming error)
-     *  'msg': an array of one or more messages, if the string is invalid or
+     *  'msg': an array of messages (possibly empty) if the string is invalid or
      *        an error occurred, indicating the problem, or a suggestion of a
      *        substitution such as the substitution of 'G' for 'Gauss', or
      *        an empty array if no messages were generated.  There can also be a
@@ -1830,7 +1830,7 @@ var UcumLhcUtils = /*#__PURE__*/function () {
      *         between fromUnit and the base units, so the returned magnitude is likely not
      *         useful as a scale factor for other conversions (i.e., it only has validity
      *         and usefulness for the input values that produced it).
-     *  'unitToExp': a map of base units in uStr to their exponent
+     *  'unitToExp': a map of base units in fromUnit to their exponent
      */
 
   }, {
